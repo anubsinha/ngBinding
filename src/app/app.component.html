@@ -1,1 +1,8 @@
+
 <app-favorite></app-favorite>
+<div class="container">
+    <input [(ngModel)]="title" class="form-control" type="text" placeholder="Type something">
+    <div>
+        {{title | titleCase}}
+      </div>
+</div>
