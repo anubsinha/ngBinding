@@ -9,6 +9,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 export class FavoriteComponent implements OnInit {
   faStar = faStar;
   isActive = true;
+  title: string="";
   toggle(){
     this.isActive = !this.isActive; 
     

@@ -10,16 +10,22 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCalendar } from '@fortawesome/free-regular-svg-icons';
 
+import {FormsModule} from "@angular/forms";
+import { TitleCasePipe } from './title-case.pipe';
+
 
 library.add(faCoffee, faTwitter, faCalendar);
 @NgModule({
   declarations: [
     AppComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    TitleCasePipe,
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

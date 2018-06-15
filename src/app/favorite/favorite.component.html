@@ -5,3 +5,10 @@
     [class.active]="isActive" >
     </fa-icon>
   </div>
+
+  <div class="row">
+    <input [(ngModel)]="title" class="form-control" type="text" placeholder="Type something">
+    <div class="alert alert-info title-case" role="alert">
+        {{title | titleCase}}
+      </div>
+  </div>
