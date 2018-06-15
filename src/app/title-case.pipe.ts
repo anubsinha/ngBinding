@@ -126,11 +126,12 @@ export class TitleCasePipe implements PipeTransform {
   transform(value: string): string {
     let words: string[] = value.split(" ");
     for(let i=0; i<words.length; i++){
+       let word = words[i];
 
-       if (this.isPreposition(words[i]) && i!=0)
-        words[i] = words[i].toLowerCase();
+       if (this.isPreposition(word) && i!=0)
+        words[i] = word.toLowerCase();
        else
-        words[i] = this.toTitleCase(words[i]);
+        words[i] = this.toTitleCase(word);
        
     }
 
